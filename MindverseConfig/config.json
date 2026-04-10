@@ -6,7 +6,7 @@
   "inboxPath": "Inbox/",
   "modelVersion": "claude-3-sonnet-20240229",
   "pluginName": "Mindverse",
-  "modelProvider": "anthropic",
+  "modelProvider": "deepseek",
   "modelConfigs": {
     "anthropic": {
       "provider": "anthropic",
@@ -37,7 +37,7 @@
     "deepseek": {
       "provider": "deepseek",
       "modelName": "deepseek-chat",
-      "apiKey": ""
+      "apiKey": "sk-7b4703d17e574bcf8b0c24b2dd87b25c"
     }
   }
 }

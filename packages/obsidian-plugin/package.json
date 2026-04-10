@@ -4,7 +4,7 @@
   "description": "Mindverse - Obsidian 个人 Wiki 自动化整理插件",
   "main": "main.js",
   "scripts": {
-    "build": "tsc",
+    "build": "tsc && esbuild src/main.ts --bundle --outfile=main.js --platform=node --target=node18 --external:obsidian --format=cjs",
     "dev": "tsc --watch"
   },
   "dependencies": {
@@ -12,6 +12,7 @@
   },
   "devDependencies": {
     "@types/node": "^20.19.39",
+    "esbuild": "^0.28.0",
     "obsidian": "^1.12.3",
     "typescript": "^5.3.0"
   }
