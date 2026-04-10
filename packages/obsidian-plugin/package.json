@@ -1,0 +1,17 @@
+{
+  "name": "mindverse-obsidian",
+  "version": "1.0.0",
+  "description": "Mindverse - Obsidian 个人 Wiki 自动化整理插件",
+  "main": "main.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch"
+  },
+  "dependencies": {
+    "@mindverse/core": "*"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.3.0"
+  }
+}

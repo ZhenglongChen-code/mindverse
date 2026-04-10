@@ -1,0 +1,17 @@
+{
+  "name": "mindverse",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "npm run build --workspaces",
+    "build:core": "cd packages/core && npm run build",
+    "build:obsidian": "cd packages/obsidian-plugin && npm run build",
+    "build:vscode": "cd packages/vscode-extension && npm run build"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.0"
+  }
+}

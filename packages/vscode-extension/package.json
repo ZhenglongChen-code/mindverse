@@ -1,0 +1,119 @@
+{
+  "name": "mindverse-vscode",
+  "displayName": "Mindverse",
+  "description": "VSCode 个人 Wiki 自动化整理插件",
+  "version": "1.0.0",
+  "publisher": "Mindverse",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": ["Other"],
+  "main": "./out/extension.js",
+  "activationEvents": ["onCommand:mindverse.processInbox"],
+  "contributes": {
+    "commands": [
+      {
+        "command": "mindverse.processInbox",
+        "title": "Mindverse: 处理 Inbox 素材"
+      },
+      {
+        "command": "mindverse.openConfig",
+        "title": "Mindverse: 打开配置"
+      },
+      {
+        "command": "mindverse.validate",
+        "title": "Mindverse: 验证模型配置"
+      }
+    ],
+    "configuration": {
+      "title": "Mindverse",
+      "properties": {
+        "mindverse.modelProvider": {
+          "type": "string",
+          "enum": ["anthropic", "aliyun", "baidu", "zhipu", "moonshot", "deepseek", "spark", "hunyuan"],
+          "default": "anthropic",
+          "description": "模型提供商: anthropic(Claude), aliyun(通义千问), baidu(文心一言), zhipu(GLM), moonshot(Kimi), deepseek(DeepSeek)"
+        },
+        "mindverse.anthropicApiKey": {
+          "type": "string",
+          "default": "",
+          "description": "Anthropic (Claude) API Key"
+        },
+        "mindverse.aliyunApiKey": {
+          "type": "string",
+          "default": "",
+          "description": "阿里通义千问 API Key"
+        },
+        "mindverse.aliyunModel": {
+          "type": "string",
+          "default": "qwen-turbo",
+          "description": "通义千问模型: qwen-turbo, qwen-plus, qwen-max"
+        },
+        "mindverse.baiduApiKey": {
+          "type": "string",
+          "default": "",
+          "description": "百度 API Key (格式: API_KEY|SECRET_KEY)"
+        },
+        "mindverse.baiduModel": {
+          "type": "string",
+          "default": "ernie-4.0-8k-latest",
+          "description": "文心一言模型"
+        },
+        "mindverse.zhipuApiKey": {
+          "type": "string",
+          "default": "",
+          "description": "智谱 GLM API Key"
+        },
+        "mindverse.zhipuModel": {
+          "type": "string",
+          "default": "glm-4-flash",
+          "description": "GLM 模型"
+        },
+        "mindverse.moonshotApiKey": {
+          "type": "string",
+          "default": "",
+          "description": "Kimi API Key"
+        },
+        "mindverse.moonshotModel": {
+          "type": "string",
+          "default": "moonshot-v1-8k",
+          "description": "Kimi 模型: moonshot-v1-8k, moonshot-v1-32k"
+        },
+        "mindverse.deepseekApiKey": {
+          "type": "string",
+          "default": "",
+          "description": "DeepSeek API Key"
+        },
+        "mindverse.deepseekModel": {
+          "type": "string",
+          "default": "deepseek-chat",
+          "description": "DeepSeek 模型: deepseek-chat, deepseek-coder"
+        },
+        "mindverse.triggerMode": {
+          "type": "string",
+          "enum": ["manual", "auto", "save"],
+          "default": "manual",
+          "description": "触发模式: manual(手动), auto(定时), save(保存触发)"
+        },
+        "mindverse.cronTime": {
+          "type": "string",
+          "default": "0 */6 * * *",
+          "description": "定时规则 (Cron 表达式)"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "compile": "tsc -p ./tsconfig.json",
+    "watch": "tsc -p ./tsconfig.json --watch"
+  },
+  "dependencies": {
+    "@mindverse/core": "file:../core",
+    "axios": "^1.6.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@types/vscode": "^1.85.0",
+    "typescript": "^5.3.0"
+  }
+}

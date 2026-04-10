@@ -1,0 +1,43 @@
+{
+  "claudeApiKey": "",
+  "triggerMode": "manual",
+  "cronTime": "0 */6 * * *",
+  "wikiSavePath": "Wiki/",
+  "inboxPath": "Inbox/",
+  "modelVersion": "claude-3-sonnet-20240229",
+  "pluginName": "Mindverse",
+  "modelProvider": "anthropic",
+  "modelConfigs": {
+    "anthropic": {
+      "provider": "anthropic",
+      "modelName": "claude-3-sonnet-20240229",
+      "apiKey": ""
+    },
+    "aliyun": {
+      "provider": "aliyun",
+      "modelName": "qwen-turbo",
+      "apiKey": "",
+      "baseUrl": "https://dashscope.aliyuncs.com/compatible-mode/v1"
+    },
+    "baidu": {
+      "provider": "baidu",
+      "modelName": "ernie-4.0-8k-latest",
+      "apiKey": "API_KEY|SECRET_KEY"
+    },
+    "zhipu": {
+      "provider": "zhipu",
+      "modelName": "glm-4-flash",
+      "apiKey": ""
+    },
+    "moonshot": {
+      "provider": "moonshot",
+      "modelName": "moonshot-v1-8k",
+      "apiKey": ""
+    },
+    "deepseek": {
+      "provider": "deepseek",
+      "modelName": "deepseek-chat",
+      "apiKey": ""
+    }
+  }
+}

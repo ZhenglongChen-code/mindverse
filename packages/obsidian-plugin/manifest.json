@@ -1,0 +1,11 @@
+{
+  "id": "mindverse",
+  "name": "Mindverse",
+  "version": "1.0.0",
+  "description": "Obsidian 个人 Wiki 自动化整理插件 - Inbox 素材智能结构化",
+  "author": "Mindverse",
+  "authorUrl": "",
+  "isDesktopOnly": false,
+  "minAppVersion": "0.15.0",
+  "fundingUrl": ""
+}
