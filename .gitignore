@@ -1,6 +1,18 @@
+# Dependencies
 node_modules/
+
+# Build output
 dist/
-*.log
+
+# User data (created at runtime)
+MindverseConfig/
+MindverseIndex/
+Inbox/
+Wiki/
+
+# OS files
 .DS_Store
-.obsidian/
 *.local
+
+# Logs
+*.log
