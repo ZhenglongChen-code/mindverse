@@ -1,5 +1,27 @@
 {
-  "processedFiles": [],
-  "lastScanTime": "",
+  "processedFiles": [
+    {
+      "fileName": "原始素材示例-正则表达式.md",
+      "filePath": "/Users/bytedance/VibeCoding/Mindverse_v3/Inbox/原始素材示例-正则表达式.md",
+      "processTime": "2026-04-10 15:21:09",
+      "wikiOutputPath": "/Users/bytedance/VibeCoding/Mindverse_v3/Wiki/正则表达式速查笔记.md",
+      "processedBy": "Mindverse"
+    },
+    {
+      "fileName": "原始素材示例-知识管理理论.md",
+      "filePath": "/Users/bytedance/VibeCoding/Mindverse_v3/Inbox/原始素材示例-知识管理理论.md",
+      "processTime": "2026-04-10 15:21:19",
+      "wikiOutputPath": "/Users/bytedance/VibeCoding/Mindverse_v3/Wiki/知识管理三阶段模型与PKM核心原则.md",
+      "processedBy": "Mindverse"
+    },
+    {
+      "fileName": "Score-Based Generative Modeling Through SDE.md",
+      "filePath": "/Users/bytedance/VibeCoding/Mindverse_v3/Inbox/Score-Based Generative Modeling Through SDE.md",
+      "processTime": "2026-04-10 15:23:13",
+      "wikiOutputPath": "/Users/bytedance/VibeCoding/Mindverse_v3/Wiki/Score-Based Generative Modeling Through Stochastic Differential Equations.md",
+      "processedBy": "Mindverse"
+    }
+  ],
+  "lastScanTime": "2026-04-10 15:23:13",
   "pluginVersion": "1.0.0"
 }
