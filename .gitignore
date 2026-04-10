@@ -16,3 +16,6 @@ Wiki/
 
 # Logs
 *.log
+
+# Test vault (local development testing)
+test-vault/
