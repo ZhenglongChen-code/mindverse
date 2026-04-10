@@ -36,7 +36,7 @@ export class MindverseCore {
   private configLoader: ConfigLoader;
   private indexManager: IndexManager;
   private fileScanner: FileScanner;
-  private aiAdapter: IAiAdapter;
+  private aiAdapter!: IAiAdapter;
   private config: MindverseConfig;
 
   constructor(basePath: string) {
@@ -54,7 +54,7 @@ export class MindverseCore {
     this.aiAdapter = createAiAdapter(modelConfig);
   }
 
-  private wikiGenerator: WikiGenerator;
+  private wikiGenerator!: WikiGenerator;
 
   /**
    * 执行全量处理流程
